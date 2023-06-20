@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Smile Ad Blocker",
+    "version": "1.5",
+    "description": "block ad",
+    "background": {
+    "scripts": ["background.js"]
+    },
+    "content_scripts": [
+    {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+    }
+    ],
+    "icons": {
+        "32" : "Smile.png",
+        "64" : "Smile.png",
+        "128": "Smile.png"
+    },
+    "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+    ]
+    }
+    
